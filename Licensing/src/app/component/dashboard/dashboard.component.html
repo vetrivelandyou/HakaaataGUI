@@ -27,7 +27,7 @@
     <div class="row">
 
         <!-- col -->
-        <div class="card-container col-lg-3 col-sm-6 col-sm-12">
+        <div class="card-container col-lg-3 col-sm-6 col-sm-12" *ngFor="let dash of dashboard.Badges">
             <div class="card">
                 <div class="front bg-greensea">
 
@@ -35,13 +35,13 @@
                     <div class="row">
                         <!-- col -->
                         <div class="col-xs-4">
-                            <i class="fa fa-users fa-4x"></i>
+                            <i [class]="dash.Icon"></i>
                         </div>
                         <!-- /col -->
                         <!-- col -->
                         <div class="col-xs-8">
-                            <p class="text-elg text-strong mb-0">3 659</p>
-                            <span>Products</span>
+                            <p class="text-elg text-strong mb-0">{{dash.Counts}}</p>
+                            <span>{{dash.Name}}</span>
                         </div>
                         <!-- /col -->
                     </div>
@@ -54,164 +54,17 @@
                     <div class="row">
                         <!-- col -->
                         <div class="col-xs-4">
-                            <a href=#><i class="fa fa-cog fa-2x"></i> Manage</a>
+                            <a [href]="dash.Link1"><i class="fa fa-cog fa-2x"></i> Manage</a>
                         </div>
                         <!-- /col -->
                         <!-- col -->
                         <div class="col-xs-4">
-                            <a href=#><i class="fa fa-chain-broken fa-2x"></i> View</a>
+                            <a [href]="dash.Link2"><i class="fa fa-chain-broken fa-2x"></i> View</a>
                         </div>
                         <!-- /col -->
                         <!-- col -->
                         <div class="col-xs-4">
-                            <a href=#><i class="fa fa-ellipsis-h fa-2x"></i> More</a>
-                        </div>
-                        <!-- /col -->
-                    </div>
-                    <!-- /row -->
-
-                </div>
-            </div>
-        </div>
-        <!-- /col -->
-
-        <!-- col -->
-        <div class="card-container col-lg-3 col-sm-6 col-sm-12">
-            <div class="card">
-                <div class="front bg-lightred">
-
-                    <!-- row -->
-                    <div class="row">
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <i class="fa fa-shopping-cart fa-4x"></i>
-                        </div>
-                        <!-- /col -->
-                        <!-- col -->
-                        <div class="col-xs-8">
-                            <p class="text-elg text-strong mb-0">19 364</p>
-                            <span>Customers</span>
-                        </div>
-                        <!-- /col -->
-                    </div>
-                    <!-- /row -->
-
-                </div>
-                <div class="back bg-lightred">
-
-                    <!-- row -->
-                    <div class="row">
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <a href=#><i class="fa fa-cog fa-2x"></i> Manage</a>
-                        </div>
-                        <!-- /col -->
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <a href=#><i class="fa fa-chain-broken fa-2x"></i> View</a>
-                        </div>
-                        <!-- /col -->
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <a href=#><i class="fa fa-ellipsis-h fa-2x"></i> More</a>
-                        </div>
-                        <!-- /col -->
-                    </div>
-                    <!-- /row -->
-
-                </div>
-            </div>
-        </div>
-        <!-- /col -->
-
-        <!-- col -->
-        <div class="card-container col-lg-3 col-sm-6 col-sm-12">
-            <div class="card">
-                <div class="front bg-blue">
-
-                    <!-- row -->
-                    <div class="row">
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <i class="fa fa-usd fa-4x"></i>
-                        </div>
-                        <!-- /col -->
-                        <!-- col -->
-                        <div class="col-xs-8">
-                            <p class="text-elg text-strong mb-0">10</p>
-                            <span>Sales</span>
-                        </div>
-                        <!-- /col -->
-                    </div>
-                    <!-- /row -->
-
-                </div>
-                <div class="back bg-blue">
-
-                    <!-- row -->
-                    <div class="row">
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <a href=#><i class="fa fa-cog fa-2x"></i> Manage</a>
-                        </div>
-                        <!-- /col -->
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <a href=#><i class="fa fa-chain-broken fa-2x"></i> View</a>
-                        </div>
-                        <!-- /col -->
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <a href=#><i class="fa fa-ellipsis-h fa-2x"></i> More</a>
-                        </div>
-                        <!-- /col -->
-                    </div>
-                    <!-- /row -->
-
-                </div>
-            </div>
-        </div>
-        <!-- /col -->
-
-        <!-- col -->
-        <div class="card-container col-lg-3 col-sm-6 col-sm-12">
-            <div class="card">
-                <div class="front bg-slategray">
-
-                    <!-- row -->
-                    <div class="row">
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <i class="fa fa-eye fa-4x"></i>
-                        </div>
-                        <!-- /col -->
-                        <!-- col -->
-                        <div class="col-xs-8">
-                            <p class="text-elg text-strong mb-0">29 651</p>
-                            <span>Renewals</span>
-                        </div>
-                        <!-- /col -->
-                    </div>
-                    <!-- /row -->
-
-                </div>
-                <div class="back bg-slategray">
-
-                    <!-- row -->
-                    <div class="row">
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <a href=#><i class="fa fa-cog fa-2x"></i> Manage</a>
-                        </div>
-                        <!-- /col -->
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <a href=#><i class="fa fa-chain-broken fa-2x"></i> View</a>
-                        </div>
-                        <!-- /col -->
-                        <!-- col -->
-                        <div class="col-xs-4">
-                            <a href=#><i class="fa fa-ellipsis-h fa-2x"></i> More</a>
+                            <a [href]="dash.Link3"><i class="fa fa-ellipsis-h fa-2x"></i> More</a>
                         </div>
                         <!-- /col -->
                     </div>
