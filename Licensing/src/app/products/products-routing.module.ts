@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ProductsComponent } from './products.component';
+import { ProductCreateComponent } from './create/product-create.component';
 
 const routes: Routes = [
-  { path: 'manage', component: ProductsComponent }, 
-  { path: 'view', component: ProductsComponent }
+  { path: '', component: ProductsComponent }, 
+  { path: 'create', component: ProductCreateComponent },
+  { path: ':id', component: ProductsComponent }
 ];
 
 @NgModule({
