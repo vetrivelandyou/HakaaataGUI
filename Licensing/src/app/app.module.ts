@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import {ToastModule} from 'ng2-toastr/ng2-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { appRoutes } from './app.routing';
 import { AppComponent } from './app.component';
 
@@ -20,10 +21,11 @@ import { ProductsViewComponent } from './_component/products-view/products-view.
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(
       appRoutes
-      //{ enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    ToastModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

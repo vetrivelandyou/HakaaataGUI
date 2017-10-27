@@ -1,19 +1,11 @@
-/*[
-    {
-        "id": 12,
-        "name": "Microsoft Vidual Studio",
-        "description": "Some Description",
-        "SKU": "MS2VS343",
-        "price": "1233"
-    }
-]
-*/
 export const Products = [
     {
-        id: 11, sku: "ABDGDH", name: 'Mr. Nice', photo: "http://via.placeholder.com/450x150",
-        desc: "Turn your idea into a new app, reimagine an existing system or create a hybrid cloud application"
-        + "with confidence, no matter the platform or where you are on the journey to the cloud"
-        + "Azure. Cloud for all.",
-        price: "1233"
+        id: 12,
+        model: "Office_365",
+        name: 'Office 365 subscription',
+        photo: "../../assets/images/products/12.jpg",
+        desc: "Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.",
+        full_desc: "Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.Office 365 Home Office 365 Home Not yet rated ₹ 4,619.00 per year ₹ 460.00 per monthShop now Best for households. Includes always up-to-date Office applications and extra OneDrive storage for up to 5 users.",
+        price: "460.65"
     }
 ];
