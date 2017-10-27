@@ -5,10 +5,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { appRoutes } from './app.routing';
 import { AppComponent } from './app.component';
 
-import { HeaderBarComponent } from './component/header-bar/header-bar.component';
-import { SidenavBarComponent } from './component/sidenav-bar/sidenav-bar.component';
-import { RightnavBarComponent } from './component/rightnav-bar/rightnav-bar.component';
-import { ProductsViewComponent } from './component/products-view/products-view.component';
+import { HeaderBarComponent } from './_component/header-bar/header-bar.component';
+import { SidenavBarComponent } from './_component/sidenav-bar/sidenav-bar.component';
+import { RightnavBarComponent } from './_component/rightnav-bar/rightnav-bar.component';
+import { ProductsViewComponent } from './_component/products-view/products-view.component';
 
 @NgModule({
   declarations: [
