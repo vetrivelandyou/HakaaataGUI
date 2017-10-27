@@ -1,0 +1,76 @@
+<div class="page page-ui-tiles">
+  <div class="pageheader">
+    <h2>Create New Licence Product</h2>
+  </div>
+
+  <!-- row -->
+  <div class="row">
+    <div class="col-md-12">
+      <section class="tile">
+
+        <!-- tile header -->
+        <div class="tile-header dvd dvd-btm">
+          <h1 class="custom-font"><strong>Licence</strong> Product</h1>
+        </div>
+        <!-- /tile header -->
+
+        <!-- tile body -->
+        <div class="tile-body">
+
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="name" class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name">
+              </div>
+            </div>
+            <hr class="line-dashed line-full">
+            <div class="form-group">
+              <label for="sku" class="col-sm-2 control-label">SKU</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="sku">
+              </div>
+            </div>
+            <hr class="line-dashed line-full">
+            <div class="form-group">
+              <label for="price" class="col-sm-2 control-label">Price</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="price">
+              </div>
+            </div><hr class="line-dashed line-full">
+            <div class="form-group">
+              <label for="image" class="col-sm-2 control-label">Image</label>
+              <div class="col-sm-10">
+                <input type="file" class="form-control" id="image">
+              </div>
+            </div>
+
+            <hr class="line-dashed line-full">
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Product Details</label>
+              <div class="col-sm-10">
+                <textarea class="form-control"></textarea>
+                <div id="summernote" style="display: none;">Product Details</div>
+              </div>
+            </div>
+
+            <hr class="line-dashed line-full">
+
+            <div class="form-group">
+              <div class="col-sm-4 col-sm-offset-2">
+                <a [routerLink]="['/licence']" class="btn btn-lightred">Cancel</a>
+                <button type="submit" class="btn btn-default">Save changes</button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+        <!-- /tile body -->
+
+      </section>
+    </div>
+  </div>
+  <!-- /row -->
+</div>
