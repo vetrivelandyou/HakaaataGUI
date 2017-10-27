@@ -1,7 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+
 export const appRoutes: Routes = [
 
-    { path: 'dashboard', component: DashboardComponent },
-    { path: '', component: DashboardComponent }
+    { path: 'dashboard', loadChildren:  './dashboard/dashboard.module#DashboardModule' },
+    { path: 'licence', loadChildren:  './products/products.module#ProductsModule'},
+    { path: 'customers', loadChildren:  './customers/customers.module#CustomersModule' },
+    { path: 'reports', loadChildren:  './reports/reports.module#ReportsModule'},
+    { path: '**', redirectTo: 'dashboard' }
 ];

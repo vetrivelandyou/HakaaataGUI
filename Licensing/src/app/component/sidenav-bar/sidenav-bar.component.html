@@ -8,44 +8,81 @@
         <div class="panel-heading" role="tab">
           <h4 class="panel-title">
             <a data-toggle="collapse" href="#sidebarNav">
-                                            Navigation <i class="fa fa-angle-up"></i>
-                                        </a>
+              Navigation
+              <i class="fa fa-angle-up"></i>
+            </a>
           </h4>
         </div>
         <div id="sidebarNav" class="panel-collapse collapse in" role="tabpanel">
           <div class="panel-body">
 
-
             <!-- ===================================================
                                         ================= NAVIGATION Content ===================
                                         ==================================================== -->
             <ul id="navigation">
-              <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+              <li class="active">
+                <a routerLink="/">
+                  <i class="fa fa-dashboard"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
               <li>
-                <a role="button" tabindex="0"><i class="fa fa-shopping-cart"></i> <span>Products</span> </a>
-               
-
+                <a role="button" tabindex="0">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>Products</span>
+                </a>
                 <ul>
-                  <li><a href="mail-inbox.html"><i class="fa fa-caret-right"></i> Manage Products</a></li>
-                  <li><a href="mail-compose.html"><i class="fa fa-caret-right"></i> View Products </a></li>
-                  
-                </ul> 
-              </li>
-              <li>
-                <a role="button" tabindex="0"><i class="fa fa-envelope-o"></i> <span>Reports</span> </a>
-               
+                  <li>
+                    <a routerLink="licence/manage">
+                      <i class="fa fa-caret-right"></i> Manage Licence</a>
+                  </li>
+                  <li>
+                    <a routerLink="licence/view">
+                      <i class="fa fa-caret-right"></i> View Licence </a>
+                  </li>
 
-                <ul>
-                  <li><a href="mail-inbox.html"><i class="fa fa-caret-right"></i> Sales Reports</a></li>
-                  <li><a href="mail-compose.html"><i class="fa fa-caret-right"></i> Reporting Indivdual Reports </a></li>
-                  <li><a href="mail-single.html"><i class="fa fa-caret-right"></i> Financial Reports</a></li>
-                </ul> 
+                </ul>
               </li>
               <li>
-                <a role="button" tabindex="0"><i class="fa fa-list"></i> <span>Escalated Queries</span></a>
-              
+                <a role="button" tabindex="0">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>Customers</span>
+                </a>
+                <ul>
+                  <li>
+                    <a routerLink="customers/manage">
+                      <i class="fa fa-caret-right"></i> Manage Customers</a>
+                  </li>
+                  <li>
+                    <a routerLink="customers/licence">
+                      <i class="fa fa-caret-right"></i> Renew Licence </a>
+                  </li>
+                </ul>
               </li>
-              
+              <li>
+                <a role="button" tabindex="0">
+                  <i class="fa fa-envelope-o"></i>
+                  <span>Reports</span>
+                </a>
+                <ul>
+                  <li>
+                    <a routerLink="reports/licence">
+                      <i class="fa fa-caret-right"></i> Licence Report</a>
+                  </li>
+                  <li>
+                    <a routerLink="reports/customers">
+                      <i class="fa fa-caret-right"></i> Customers Report  </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li>
+                <a role="button" tabindex="0">
+                  <i class="fa fa-list"></i>
+                  <span>Escalated Queries</span>
+                </a>
+
+              </li> -->
+
             </ul>
             <!--/ NAVIGATION Content -->
 
@@ -57,8 +94,9 @@
         <div class="panel-heading" role="tab">
           <h4 class="panel-title">
             <a data-toggle="collapse" href="#sidebarCharts">
-                                            Orders Summary <i class="fa fa-angle-up"></i>
-                                        </a>
+              Orders Summary
+              <i class="fa fa-angle-up"></i>
+            </a>
           </h4>
         </div>
         <div id="sidebarCharts" class="panel-collapse collapse in" role="tabpanel">
@@ -67,14 +105,10 @@
 
               <div class="media">
                 <a class="pull-right" role="button" tabindex="0">
-                                                    <span class="sparklineChart"
-                                                          values="5, 8, 3, 4, 6, 2, 1, 9, 7"
-                                                          sparkType="bar"
-                                                          sparkBarColor="#92424e"
-                                                          sparkBarWidth="6px"
-                                                          sparkHeight="36px">
-                                                    Loading...</span>
-                                                </a>
+                  <span class="sparklineChart" values="5, 8, 3, 4, 6, 2, 1, 9, 7" sparkType="bar" sparkBarColor="#92424e" sparkBarWidth="6px"
+                    sparkHeight="36px">
+                    Loading...</span>
+                </a>
                 <div class="media-body">
                   This week sales
                   <h4 class="media-heading">26, 149</h4>
@@ -83,14 +117,10 @@
 
               <div class="media">
                 <a class="pull-right" role="button" tabindex="0">
-                                                    <span class="sparklineChart"
-                                                          values="2, 4, 5, 3, 8, 9, 7, 3, 5"
-                                                          sparkType="bar"
-                                                          sparkBarColor="#397193"
-                                                          sparkBarWidth="6px"
-                                                          sparkHeight="36px">
-                                                    Loading...</span>
-                                                </a>
+                  <span class="sparklineChart" values="2, 4, 5, 3, 8, 9, 7, 3, 5" sparkType="bar" sparkBarColor="#397193" sparkBarWidth="6px"
+                    sparkHeight="36px">
+                    Loading...</span>
+                </a>
                 <div class="media-body">
                   This week balance
                   <h4 class="media-heading">318, 651</h4>
@@ -101,7 +131,7 @@
           </div>
         </div>
       </div>
-    
+
     </div>
 
   </div>

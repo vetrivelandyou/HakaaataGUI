@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, ActivatedRoute } from '@angular/router';
-import { Dashboard, Badge } from '../../models/dashboards.models'
+import { Dashboard, Badge } from '../models/dashboards.models'
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',

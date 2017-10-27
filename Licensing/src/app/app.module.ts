@@ -4,24 +4,25 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { appRoutes } from './app.routing';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+
 import { HeaderBarComponent } from './component/header-bar/header-bar.component';
 import { SidenavBarComponent } from './component/sidenav-bar/sidenav-bar.component';
 import { RightnavBarComponent } from './component/rightnav-bar/rightnav-bar.component';
+import { ProductsViewComponent } from './component/products-view/products-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     HeaderBarComponent,
     SidenavBarComponent,
-    RightnavBarComponent
+    RightnavBarComponent,
+    ProductsViewComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      appRoutes
+      //{ enableTracing: true } // <-- debugging purposes only
     )
   ],
   providers: [],
