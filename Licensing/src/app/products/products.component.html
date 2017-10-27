@@ -21,13 +21,16 @@
           <img [src]="product.photo" />
         </div>
         <div class="tile-widget">
-          <p>Product Key : {{ product.sku }}</p>
+          <p>Model : {{ product.model }}</p>
         </div>
         <div class="tile-body">
-          <p>{{ product.desc }}</p>
+          {{ product.desc }}
         </div>
         <div class="tile-widget">
-          <p>Price : {{ product.price }} $</p>
+            <p>Price : ${{ product.price }}</p>
+        </div>
+        <div class="tile-widget">
+          <a routerLink="/licence/{{ product.id }}">Read More</a>
         </div>
       </section>
     </div>
