@@ -16,3 +16,18 @@ License managers protect software vendors from losses due to software piracy and
 A license manager is different from a software asset management tool, which end-user organizations employ to manage the software they have licensed from many software vendors. However, some software asset management tools include license manager functions. These are used to reconcile software licenses and installed software, and generally include device discovery, software inventory, license compliance, and reporting functions.
 
 The primary benefits of these software management tools are that they greatly reduce the difficulty, cost, and time required for reporting and can increase operational transparency in order to prevent litigation costs associated with software misuse.
+
+Our product: Lincense Self-Service Portal
+
+What does our product do?
+
+With the pretext given about Linceses you might wonder what doe sthe self service portal do? It is an enabler which will help you manage linceses ,customers, lincese expiration dates , Activation 
+etc. 
+
+It helps in managing these linceses in a focused , centralised and easy to use pattern which helps us to work smartly and efficiently without the hassel of keeping track of which lincese was given to
+whom and when.
+
+It gives u statistical reports which shows which product sold most in which year , helps customers to realize which is the lincese they need what does that software do, thus providing transperancy 
+and calrity even to the customer. 
+
+Its simple to use feature is the main highlight of our product. 
