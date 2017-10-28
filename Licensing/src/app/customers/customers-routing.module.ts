@@ -4,8 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { CustomersComponent } from './customers.component';
 
 const routes: Routes = [
-  { path: 'manage', component: CustomersComponent }, 
-  { path: 'licence', component: CustomersComponent }
+  { path: 'manage', loadChildren:  './manage/manage.customers.module#ManageCustomersModule' }, 
+  { path: 'activate-licence', loadChildren:  './activate/activate.customers.module#ActivateCustomersModule' }
 ];
 
 @NgModule({
