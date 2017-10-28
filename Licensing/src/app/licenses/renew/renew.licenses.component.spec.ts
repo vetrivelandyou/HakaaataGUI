@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ActivateLicensesComponent } from './activate.licenses.component';
+import { RenewLicensesComponent } from './renew.licenses.component';
 
-describe('ActivateLicensesComponent', () => {
-  let component: ActivateLicensesComponent;
-  let fixture: ComponentFixture<ActivateLicensesComponent>;
+describe('RenewLicensesComponent', () => {
+  let component: RenewLicensesComponent;
+  let fixture: ComponentFixture<RenewLicensesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ActivateLicensesComponent ]
+      declarations: [ RenewLicensesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ActivateLicensesComponent);
+    fixture = TestBed.createComponent(RenewLicensesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

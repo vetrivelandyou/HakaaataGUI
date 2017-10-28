@@ -5,7 +5,9 @@ import { LicensesComponent } from './licenses.component';
 
 const routes: Routes = [
   { path: 'manage', loadChildren:  './manage/manage.licenses.module#ManageLicensesModule' }, 
-  { path: 'activate-license', loadChildren:  './activate/activate.licenses.module#ActivateLicensesModule' }
+  { path: 'renew-list-license', loadChildren:  './renew-list/renew-list.licenses.module#RenewListLicensesModule' },
+  { path: 'renew-license', loadChildren:  './renew/renew.licenses.module#RenewLicensesModule' },
+  { path: 'compliance', loadChildren:  './compliance/compliance.licenses.module#ComplianceLicensesModule' }
 ];
 
 @NgModule({

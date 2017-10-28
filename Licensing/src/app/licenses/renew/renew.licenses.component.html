@@ -8,7 +8,7 @@
                       <i class="fa fa-home"></i> SSP</a>
               </li>
               <li>
-                  <a href="/licenses/manage">Activate License</a>
+                  <a href="/licenses/renew">Renew License</a>
               </li>
           </ul>
       </div>
@@ -70,53 +70,46 @@
               <!-- /tile header -->
 
               <!-- tile body -->
-              <div class="tile-body table-custom">
-
-                  <div class="table-responsive">
-                      <table class="table table-custom" id="project-progress">
-                          <thead>
-                              <tr>
-                                  <th>ID</th>
-                                  <th>Product</th>
-                                  <th>License</th>
-                                  <th>Type</th>
-                                  <th>Rights</th>
-                                  <th>Installs</th>
-                                  <th>Status</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <td>1</td>
-                                  <td>Graphic layout</td>
-                                  <td>Graphic layout for client</td>
-                                  <td>Individual</td>
-                                  <td>123</td>
-                                  <td>101</td>
-                                  <td>Active</td>
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>Product layout</td>
-                                <td>Product layout for server</td>
-                                <td>Individual</td>
-                                <td>56</td>
-                                <td>24</td>
-                                <td>In active</td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Graphic layout</td>
-                              <td>Graphic layout for client</td>
-                              <td>Individual</td>
-                              <td>123</td>
-                              <td>101</td>
-                              <td>Active</td>
-                          </tr>
-                          </tbody>
-                      </table>
-                  </div>
-
+              <div class="tile-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label for="name" class="col-sm-2 control-label">License Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name">
+                      </div>
+                    </div>
+                    <hr class="line-dashed line-full">
+                    <div class="form-group">
+                      <label for="sku" class="col-sm-2 control-label">Software</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="sku">
+                      </div>
+                    </div>                                             
+                    <hr class="line-dashed line-full">        
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Product Details</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control"></textarea>
+                        <div id="summernote" style="display: none;">Product Details</div>
+                      </div>
+                    </div>       
+                    <hr class="line-dashed line-full">        
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Activation Key</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control"></textarea>
+                        <div id="summernote" style="display: none;">Activation Key</div>
+                      </div>
+                    </div>
+                    <hr class="line-dashed line-full">        
+                    <div class="form-group">
+                      <div class="col-sm-4 col-sm-offset-2">
+                        <a [routerLink]="['/']" class="btn btn-default">Cancel</a>
+                        <a [routerLink]="['/']" class="btn btn-primary">Renew</a>                       
+                      </div>
+                    </div>
+        
+                  </form>
               </div>
               <!-- /tile body -->
 
