@@ -1,0 +1,135 @@
+<div class="page page-software-requests">
+    <div class="pageheader">
+        <div class="page-bar">
+  
+            <ul class="page-breadcrumb">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home"></i> SSP</a>
+                </li>
+                <li>
+                    <a href="/customers/manage">Software Requests</a>
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <div class="row">
+        <!-- col -->
+        <div class="col-md-12">
+            <!-- tile -->
+            <section class="tile">
+  
+                <!-- tile header -->
+                <div class="tile-header dvd dvd-btm">
+                    <h1 class="custom-font">
+                        <strong>Software </strong> Requests</h1>
+                    <ul class="controls">
+                        <li>
+                            <a role="button" tabindex="0" class="pickDate">
+                                <span></span>&nbsp;&nbsp;
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+  
+                            <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
+                                <i class="fa fa-cog"></i>
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                                <li>
+                                    <a role="button" tabindex="0" class="tile-toggle">
+                                        <span class="minimize">
+                                            <i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                        <span class="expand">
+                                            <i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a role="button" tabindex="0" class="tile-refresh">
+                                        <i class="fa fa-refresh"></i> Refresh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a role="button" tabindex="0" class="tile-fullscreen">
+                                        <i class="fa fa-expand"></i> Fullscreen
+                                    </a>
+                                </li>
+                            </ul>
+  
+                        </li>
+                        <li class="remove">
+                            <a role="button" tabindex="0" class="tile-close">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /tile header -->
+  
+                <!-- tile body -->
+                <div class="tile-body">
+                  <form class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Product Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                      </div>
+                      <hr class="line-dashed line-full">
+                      <div class="form-group">
+                        <label for="sku" class="col-sm-2 control-label">Vendor</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="sku">
+                        </div>
+                      </div>
+                      <hr class="line-dashed line-full">
+                      <div class="form-group">
+                        <label for="price" class="col-sm-2 control-label">Price</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="price">
+                        </div>
+                      </div>        
+                      <hr class="line-dashed line-full">        
+                      <div class="form-group">
+                            <label for="price" class="col-sm-2 control-label">No. of Instances</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="price">
+                            </div>
+                          </div>        
+                          <hr class="line-dashed line-full">        
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Software Details</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control"></textarea>
+                          <div id="summernote" style="display: none;">Product Details</div>
+                        </div>
+                      </div>       
+                      <hr class="line-dashed line-full">        
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Business Justification</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control"></textarea>
+                          <div id="summernote" style="display: none;">Business Justification</div>
+                        </div>
+                      </div>
+                      <hr class="line-dashed line-full">        
+                      <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-2">
+                          <a [routerLink]="['product/view']" class="btn btn-default">Cancel</a>
+                          <a [routerLink]="['/']" class="btn btn-primary">Submit</a>
+                        </div>
+                      </div>
+          
+                    </form>
+                </div>
+                <!-- /tile body -->
+  
+            </section>
+            <!-- /tile -->
+        </div>
+        <!-- /col -->
+    </div>
+  
+  </div>

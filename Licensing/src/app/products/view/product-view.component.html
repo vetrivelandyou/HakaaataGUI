@@ -1,40 +1,48 @@
-<div class="page page-ui-tiles">
-    <div class="pageheader">
-      <h2>Licence List</h2>
-      <a class="btn btn-success pull-right" routerLink="/licence/create"><i class="fa fa-plus"></i>&nbsp;Create Product</a>
-    </div>
-  
-    <!-- row -->
-    <div class="row">
-      <!-- col -->
-      <div class="col-md-12" *ngFor="let product of products">
-        <!-- tile -->
-        <section class="tile">
-          <div class="tile-header dvd dvd-btm">
-            <h1 class="custom-font"><strong>{{ product.name }}</strong></h1>
-            <ul class="controls">
-              <li class="modify"><a role="button" tabindex="0" class="tile-close">Modify <i class="fa fa-cog"></i></a></li>
-              <li class="remove"><a role="button" tabindex="0" class="tile-close">Delete <i class="fa fa-trash"></i></a></li>
-            </ul>
+  <div class="page page-software-requests">
+      <div class="pageheader">
+          <div class="page-bar">
+    
+              <ul class="page-breadcrumb">
+                  <li>
+                      <a href="/">
+                          <i class="fa fa-home"></i> SSP</a>
+                  </li>
+                  <li>
+                      <a href="/customers/manage">Software Requests</a>
+                  </li>
+              </ul>
           </div>
-          <div class="tile-image">
-            <img [src]="product.photo" />
-          </div>
-          <div class="tile-widget">
-            <p>Model : {{ product.model }}</p>
-          </div>
-          <div class="tile-body">
-            {{ product.full_desc }}
-          </div>
-          <div class="tile-widget">
-              <p>Price : ${{ product.price }}</p>
-          </div>
-          <div class="tile-widget">
-            <a routerLink="/licence"><i class="fa fa-chevron-left"> Back</i></a>
-          </div>
-        </section>
       </div>
-      <!-- /col -->
+      <div class="row">
+          <!-- col -->
+          <div class="col-md-6" *ngFor="let product of products">
+            <!-- tile -->
+            <section class="tile">
+              <div class="tile-header dvd dvd-btm">
+                <h1 class="custom-font"><strong>{{ product.name }}</strong></h1>
+                <ul class="controls">
+                  <li class="modify"><a role="button" tabindex="0" class="tile-close">Modify <i class="fa fa-cog"></i></a></li>
+                  <li class="remove"><a role="button" tabindex="0" class="tile-close">Delete <i class="fa fa-trash"></i></a></li>
+                </ul>
+              </div>
+              <div class="tile-image">
+                <img [src]="product.photo" />
+              </div>
+              <div class="tile-widget">
+                <p>Model : {{ product.model }}</p>
+              </div>
+              <div class="tile-body">
+                {{ product.full_desc }}
+              </div>
+              <div class="tile-widget">
+                  <p>Price : ${{ product.price }}</p>
+              </div>
+              <div class="tile-widget">
+                <a routerLink="product/view"><i class="fa fa-chevron-left"> Back</i></a>
+              </div>
+            </section>
+          </div>
+          <!-- /col -->
+        </div>
+    
     </div>
-    <!-- /row -->
-  </div>
